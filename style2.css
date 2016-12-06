@@ -4,7 +4,9 @@
     text-align: center;
     padding: 1px;
 }
-
+body {
+    font-family: sans-serif;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -40,7 +42,9 @@ li a:hover {
 
 
 
-
+video {
+    padding: 2%;
+}
 
 
 
@@ -58,6 +62,7 @@ p {
 
 img {
     float: right;
+    display: inline-table;
 
 }
 #content {
