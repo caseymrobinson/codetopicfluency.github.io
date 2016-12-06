@@ -8,7 +8,7 @@ function validateAbbreviation(state){
 			break;
 		}
 		else{
-			document.getElementById("stateError").innerHTML = "Invalid state abbreviation";
+			document.getElementById("stateError").innerHTML = "   Invalid state abbreviation";
 		}
 	}
 }

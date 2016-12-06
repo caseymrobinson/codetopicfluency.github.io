@@ -12,3 +12,17 @@
     height: 50px;
     width: 200px;
 }
+
+#abbreviation, select {
+    width: 20%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #dbdbdb;
+}
