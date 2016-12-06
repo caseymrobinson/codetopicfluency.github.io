@@ -1,1 +1,1 @@
-Here is some text I used ajax to load from a txt file! :D
+Ajax was used to put this text on the button! :D

@@ -51,7 +51,6 @@ function loadJSON() {
 	    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	  }
   xhttp.onreadystatechange = function() {
-	  alert("hiya");
     if (this.readyState == 4 && this.status == 200) {
     	var json = this.responseText;
     	alert(json);
