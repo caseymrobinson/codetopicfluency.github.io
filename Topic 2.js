@@ -53,7 +53,6 @@ function loadJSON() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     	var json = this.responseText;
-    	alert(json);
      document.getElementById("num5").innerHTML = json;
 
     }
