@@ -26,6 +26,9 @@
 #header {
 	rgba(85, 85, 85,0.25);
 }
+#stateError {
+	visibility: hidden;
+}
 
 body {
 	background-color: #eeeeee;
