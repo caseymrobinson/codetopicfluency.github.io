@@ -24,10 +24,11 @@
 }
 
 #header {
-	rgba(85, 85, 85,0.25);
+	color: rgba(85, 85, 85,0.25);
 }
 #stateError {
 	visibility: hidden;
+	color: red;
 }
 
 body {
