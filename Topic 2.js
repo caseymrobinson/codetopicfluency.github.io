@@ -53,9 +53,7 @@ function loadJSON() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     	var json = JSON.parse(this.responseText);
-     document.getElementById("displayJSON").innerHTML = json[0].firstName + json[0].lastName;
-     document.getElementById("displayJSON").innerHTML = json[1].firstName + json[1].lastName;
-     document.getElementById("displayJSON").innerHTML = json[2].firstName + json[2].lastName;
+     document.getElementById("displayJSON").innerHTML = json[0].firstName + json[0].lastName + "/n" + json[1].firstName + json[1].lastName + "/n" + json[2].firstName + json[2].lastName;
  	}
   };
   xhttp.open("GET", "ajax_info.json", true);
