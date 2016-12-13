@@ -1,4 +1,7 @@
 function validateAbbreviation(state){
+	function(){
+		document.getElementById("stateError").onkeyup="this.style.visibility='visible';"
+	}
 	var statez = state.value;
 	var statezz = statez.toLowerCase();
 	var states = new Array ("wa", "or", "ca", "ak", "nv", "id", "ut", "az", "hi", "mt", "wy", "co", "nm", "nd", "sd", "ne", "ks", "ok", "tx", "mn", "ia", "mo", "ar", "la", "wi", "il", "ms", "mi", "ky", "tn", "al", "fl", "ga", "sc", "nc", "oh", "wv", "va", "pa", "ny", "vt", "me", "nh", "ma", "ri", "ct", "nj", "de", "md", "dc");

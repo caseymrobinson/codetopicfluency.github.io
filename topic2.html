@@ -9,7 +9,7 @@
 	<body>
 		<div>
 			<H3 id="header"> Enter a State Code to be Validated: </H3>
-			<input id="abbreviation" onkeyup="validateAbbreviation(document.getElementById('abbreviation'))" size="2">
+			<input id="abbreviation" onkeyup="validateAbbreviation(document.getElementById('abbreviation'))" onkeyup="this.style.visibility= visible;" size="2">
 			<span id="stateError" style="color:red">   Invalid state abbreviation</span>
 		</div>
 		<br>
