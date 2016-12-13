@@ -52,8 +52,8 @@ function loadJSON() {
 	  }
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-    	var json = this.responseText;
-     document.getElementById("num5").innerHTML = json;
+    	var json = JSON.parse(this.responseText);
+     document.getElementById("num5").innerHTML = json.employees[1].firstName;
 
     }
   };
