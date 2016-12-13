@@ -41,6 +41,20 @@ function loadsis(){
 alert("Name: " + sister.firstName + " " + sister.lastName + "\nAddress: " + sister.address + "\nDate of Birth: " + sister.birthDay);
 }
 
+var ma = document.getElementById("mom");
+var pa = document.getElementById("dad");
+var sis = document.getElementById("sister")
+
+if (ma){
+ma.addEventListener("click", loadmom);
+}
+if (pa){
+pa.addEventListener("click", loaddad);
+}
+if (sis){
+sis.addEventListener("click", loadsis);
+}
+
 //*********************************************************************************************************************************
 function loadJSON() {
   var xhttp;
@@ -55,9 +69,7 @@ function loadJSON() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     	var json = JSON.parse(this.responseText);
-     document.getElementById("displayJSON").innerHTML = json[0].firstName + " " + json[0].lastName + "<br>" + json[1].firstName + " " + json[1].lastName + "<br>" + json[2].firstName + " "  + json[2].lastName +
-      "<br>" + json[3].firstName + " " + json[3].lastName + "<br>" + json[4].firstName + " " + json[4].lastName + "<br>" + json[5].firstName + " " + json[5].lastName +
-       "<br>" + json[6].firstName + " " + json[6].lastName + "<br>" + json[7].firstName + " " + json[7].lastName + "<br>" + json[8].firstName + " " + json[1].lastName;
+     document.getElementById("displayJSON").innerHTML = json[0].firstName + " " + json[0].lastName + "<br>" + json[1].firstName + " " + json[1].lastName + "<br>" + json[2].firstName + " "  + json[2].lastName + "<br>" + json[3].firstName + " " + json[3].lastName + "<br>" + json[4].firstName + " " + json[4].lastName + "<br>" + json[5].firstName + " " + json[5].lastName + "<br>" + json[6].firstName + " " + json[6].lastName + "<br>" + json[7].firstName + " " + json[7].lastName + "<br>" + json[8].firstName + " " + json[8].lastName;
  	}
   };
   xhttp.open("GET", "ajax_info.json", true);
