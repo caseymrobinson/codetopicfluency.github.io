@@ -23,8 +23,12 @@
     box-sizing: border-box;
 }
 
+#stateError {
+	visibility: hidden;
+}
 #header {
 	background-color: rgba(85, 85, 85,0.25);
+	padding: 15px;
 }
 
 body {
