@@ -57,7 +57,7 @@ function loadJSON() {
 
     }
   };
-  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.open("GET", "ajax_info.json", true);
   xhttp.send();
 }
 
