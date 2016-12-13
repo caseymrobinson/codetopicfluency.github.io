@@ -54,6 +54,10 @@ function loadJSON() {
     if (this.readyState == 4 && this.status == 200) {
     	var json = JSON.parse(this.responseText);
      document.getElementById("num5").innerHTML = json.firstName[0];
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc2d5bc18fb1c3bce679db4ffaebef5c34703e76
     }
   };
   xhttp.open("GET", "ajax_info.json", true);
