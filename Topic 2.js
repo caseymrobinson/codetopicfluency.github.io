@@ -40,7 +40,6 @@ alert("Name: " + sister.firstName + " " + sister.lastName + "\nAddress: " + sist
 }
 
 //*********************************************************************************************************************************
-
 function loadJSON() {
   var xhttp;
 	if (window.XMLHttpRequest) {
@@ -50,19 +49,15 @@ function loadJSON() {
 	    // code for IE6, IE5
 	    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	  }
+
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     	var json = JSON.parse(this.responseText);
-     document.getElementById("num5").innerHTML = json.firstName[0];
-<<<<<<< HEAD
-=======
-
->>>>>>> bc2d5bc18fb1c3bce679db4ffaebef5c34703e76
+     document.getElementById("num5").innerHTML = json.firstName;
     }
   };
   xhttp.open("GET", "ajax_info.json", true);
   xhttp.send();
 }
-
 //**********************************************************************************************************************************
  
